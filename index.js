@@ -39,7 +39,7 @@ app.post("/sign_up", (req, res) => {
 app
   .get("/", (req, res) => {
     res.set({
-      "Allow-acces-Allow-Origin": "*",
+      "Allow-access-Allow-Origin": "*",
     });
     return res.redirect("index.html");
   })
