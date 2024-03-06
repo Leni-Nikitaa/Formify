@@ -39,21 +39,25 @@ input::placeholder {
   font-size: 14px;
 }
 input[type="submit"] {
-  width: 100%;
-  background-color: #764776;
+  width: 50%; /* Adjust the width as needed */
+  background-color: green; /* Green background color */
   border: none;
   color: white;
-  padding: 16px 32px;
+  padding: 12px 24px; /* Adjust the padding to make the button bigger */
   margin: 16px 0;
   border-radius: 10px;
   cursor: pointer;
   font-weight: bold;
+  font-size: 18px; /* Adjust the font size to make the button text bigger */
 }
+
 input[type="submit"]:hover {
-  background-color: #aa3d88;
+  background-color: blue; /* Blue background color on hover */
 }
+
 h2 {
   font-family: "Angsana New", sans-serif;
+  text-align: center;
 }
 h1 {
   font-family: "Angsana New", sans-serif;

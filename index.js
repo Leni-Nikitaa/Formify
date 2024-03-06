@@ -18,9 +18,11 @@ app.post("/sign_up", async (req, res) => {
   try {
     var name = req.body.name;
     var age = req.body.age;
+    var designation = req.body.designation;
     var email = req.body.email;
     var phno = req.body.phno;
     var gender = req.body.gender;
+    var userId = req.body.userId;
     var password = req.body.password;
     const hashedPassword = await bcrypt.hash(password, 10);
     var data = {
@@ -30,6 +32,8 @@ app.post("/sign_up", async (req, res) => {
       phno: phno,
       gender: gender,
       password: hashedPassword,
+      userId: userId,
+      designation: designation,
     };
     await db.collection("users").insertOne(data);
     console.log("Record Inserted Successfully");
