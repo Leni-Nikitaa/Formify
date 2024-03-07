@@ -28,12 +28,12 @@ app.post("/sign_up", async (req, res) => {
     var data = {
       name: name,
       age: age,
+      designation: designation,
       email: email,
       phno: phno,
       gender: gender,
-      password: hashedPassword,
       userId: userId,
-      designation: designation,
+      password: hashedPassword,
     };
     await db.collection("users").insertOne(data);
     console.log("Record Inserted Successfully");
