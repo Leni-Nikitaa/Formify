@@ -13,13 +13,13 @@ Formify is a web application for user registration using Node.js, Express, Mongo
 1. Clone the repository:
 
    ```bash
-   git clone https://github.com/your-username/formify.git
+   git clone https://github.com/Leni-Nikitaa/Formify.git
    ```
 
 2. Install dependencies:
 
    ```bash
-   cd formify
+   cd Formify
    npm install
    ```
 
